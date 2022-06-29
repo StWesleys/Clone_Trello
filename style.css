@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/*TOPO*/
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 15px;
+    align-items: center;
+}
+
+
+.logo a{
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #293856;
+}
+
+.log-in a{
+    margin-right: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.log-in a:first-child{
+    color: #0051CC;
+}
+
+.log-in a:first-child:hover{
+    text-decoration: underline;
+}
+
+.log-in a:last-child{
+    background-color: #0054FF;
+    color: white;
+    padding: 8.5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.log-in a:last-child:hover{
+    background-color: #00327F;
+}
+
+/*MAIN*/
+.container_hello{
+    display: flex;
+    margin: 50px;
+    align-items: center;
+}
+
+.hello_trello_img img{
+    width: 100%;
+    margin-left: 25px;
+}
+
+.hello_trello{
+    margin-left: 40px;
+}
+
+.hello_trello h1{
+    color: #061733;
+    font-size: 50px;
+    line-height: 140%;
+}
+
+.hello_trello p{
+    color: #061733;
+    line-height: 140%;
+    margin: 20px 0;
+    font-size: 23px;
+}
+
+input{
+    padding: 15px;
+    width: 35%;
+    margin-right: 25px;
+}
+
+::-webkit-input-placeholder{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+}
+
+.hello_trello a{
+    border: 1px solid transparent;
+    text-decoration: none;
+    background-color: #0056D9;
+    padding: 14px;
+    color: white;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 946px) {
+    .container_hello{
+        max-width: 960px;
+    }
+
+    .hello_trello_img img{
+        display: none;
+    }
+
+    .hello_trello{
+        text-align: center;
+    }
+}
+/*It’s more than work*/
+.start_doing{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    line-height: 200%;
+    margin: 0 auto;
+}
+
+h2{
+    color: #091E42;
+    line-height: 200%;
+}
+
+p{
+    color: #091E42;
+    line-height: 150%;
+}
+
+.start_doing h2{
+    font-size: 25px;
+}
+
+.start_doing p{
+    max-width: 800px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.start_doing a{
+    margin: 20px auto;
+    border: 1px solid #0065FF;
+    text-decoration: none;
+    color: #0065FF;
+    width: 10%;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.start_doing a:hover{
+    background: #0065FF;
+    color: white;
+}
+
+.start_doing img{
+    width: 85%;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 946px) {
+    .start_doing a{
+        width: 20%;
+    }
+
+    .start_doing{
+        text-align: center;
+    }
+}
+
+/*Features */
+
+.features{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.teams{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 100px 0;
+    max-width: 555px;
+}
+
+.teams h2{
+    font-size: 33px;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.teams p{
+    font-size: 21px;
+    font-weight: 100;
+}
+
+/*VIEWS*/
+
+.views{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.views img{
+    width: 40%;
+}
+
+.choose{
+    max-width: 610px;
+}
+
+.choose p:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.choose h2{
+    font-size: 30px;
+}
+
+.choose p:nth-child(3){
+    color: #7A869A;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.choose p a{
+    color: #091E42;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.choose p a:hover{
+    text-decoration: underline;
+}
+
+.choose p:nth-of-type(3)::before{
+    content: '+';
+    margin-right: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/*DIVE*/
+.dive{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.dive img{
+    width: 40%;
+}
+
+.details{
+    max-width: 615px;
+}
+
+.details p:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.details h2{
+    font-size: 30px;
+}
+
+.details p:nth-child(3){
+    color: #7A869A;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.details p a{
+    color: #091E42;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.details p a:hover{
+    text-decoration: underline;
+}
+
+.details p:nth-of-type(3)::before{
+    content: '+';
+    margin-right: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/*MEET*/
+.meet{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.meet img{
+    width: 40%;
+}
+
+.butler{
+    max-width: 615px;
+}
+
+.butler p:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.butler h2{
+    font-size: 30px;
+}
+
+.butler p:nth-child(3){
+    color: #7A869A;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.butler p a{
+    color: #091E42;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.butler p a:hover{
+    text-decoration: underline;
+}
+
+.butler p:nth-of-type(3)::before{
+    content: '+';
+    margin-right: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/*TOOLS*/
+.tools{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.tools img{
+    width: 35%;
+}
+
+.power{
+    max-width: 615px;
+}
+
+.power p:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.power h2{
+    font-size: 30px;
+}
+
+.power p:nth-child(3){
+    color: #7A869A;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.power p a{
+    color: #091E42;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.power p a:hover{
+    text-decoration: underline;
+}
+
+.power p:nth-of-type(3)::before{
+    content: '+';
+    margin-right: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/*PRICE*/
+.price{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 20px 40px 20px;
+    
+    display: flex;
+    border-top: 1px solid #091E42;
+    border-bottom: 1px solid #091E42;
+}
+
+.pricing, .tour{
+    display: flex;
+    align-items: center;
+}
+
+.price h3{
+    color: #091E42;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 15px 20px; 
+}
+
+.price p{
+    color: #091E42;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 20px 20px;
+}
+
+.price a{
+    margin: 0 20px;
+    text-decoration: none;
+    border: 1px solid #0065FF;
+    color: #0065FF;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+
+.price a:hover{
+    background-color: #0065FF;
+    color: white;
+}
+
+/*COMMENTS*/
+.comments{
+    max-width: 1100px;
+    margin: 100px auto;
+    border-bottom: 5px solid #172B4D;
+    padding-bottom: 60px;
+
+    display: flex;
+}
+
+.ebay img{
+    width: 70%;
+}
+
+.ebay p:nth-child(2){
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.ebay p:nth-child(3){
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.finance{
+    max-width: 700px;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.finance p{
+    color: #172B4D;
+}
+
+.finance p:first-child{
+    font-size: 30px;
+}
+
+.finance p:first-child::before{
+    content: '"';
+    color: #172B4D;
+    font-size: 50px;
+}
+
+.finance p:nth-child(2){
+    margin-top: 20px;
+    text-align: right;
+}
+
+.finance p:nth-child(3){
+    text-align: right;
+    font-size: 20px;
+    margin-right: 14px;
+    font-weight: 300;
+}
+
+/*SIGN UP*/
+.sign-up{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    border: 1px solid white;
+    border-radius: 10px;
+    background: linear-gradient(#413698, #4C95FA);
+    padding: 75px 0;
+}
+
+.sign-up p{
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.call_to_action{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.call_to_action input{
+    width: 300px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+.call_to_action a{
+    text-decoration: none;
+    color: white;
+    background: rgb(0, 184, 217);
+    padding: 13px 40px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.call_to_action a:hover{
+    background-color: #006C80;
+}
+
+/*Trello also works great on your smaller screen.*/
+.play{
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;  
+    align-items: center;
+    max-width: 1225px;
+    
+    margin: 50px 0;
+}
+
+.play p{
+    margin-right: 20px;
+    color: #172B4D;
+    font-size: 18px;
+}
+
+.play img{
+    width: 170px;
+    margin-left: 10px;
+}
+
+/*Footer*/
+.links-nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.links-nav a{
+    margin-right: 10px;
+    font-size: 15px;
+    color: #959DA1;
+}
+
+.links-nav a:hover{
+    color: #4D4D4D;
+}
+
+.atlassian{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 80px;
+}
+
+.atlassian img{
+    width: 10%;
+    margin-bottom: 15px;
+}
+
+.atlassian p{
+    font-size: 15px;
+}
